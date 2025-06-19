@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Read in-depth articles on Indian politics, governance, and policy analysis by Political Report." />
+  <meta name="author" content="Ashutosh Pandey" />
+
+  <meta name="keywords" content="Political Articles, Indian Politics, Government Analysis, Political Opinions, BJP, Indian Elections" />
+  <meta property="og:title" content="Political Articles – In-Depth Insights by Political Report" />
+  <meta property="og:description" content="Explore well-researched political articles and opinions curated by Political Report." />
+  <meta property="og:image" content="https://politicalreport.netlify.app/images/articles-banner.jpg" />
+  <meta property="og:url" content="https://politicalreport.netlify.app/articles.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="canonical" href="https://politicalreport.netlify.app/articles.html" />
+  <title>Political Articles – Political Report</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Preload and preconnect for faster font loading -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" media="all">
+
+
+</head>
+
+<body>
+  <header>
+    <nav class="modern-navbar">
+      <div class="brand">POLITICAL REPORT</div>
+    
+      <!-- Mobile Menu Toggle -->
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    
+      <!-- Slide-in Navigation -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="articles.html" class="active">Articles</a></li>
+        <li><a href="about.html">About Me</a></li>
+      </ul>
+    </nav>
+    
+    
+    
+  </header>
+
+  <div class="main-content">
+    <section>
+      <h1>Political Articles & Insights</h1>
+      <p>Welcome to the Articles section of Political Report. Here you'll find well-researched, unbiased articles exploring key political themes, government actions, policy debates, and leadership analysis.</p>
+
+      <h2>Recent Articles</h2>
+      <ul>
+         <li><a href="blog8.html"> > Iran vs Israel Conflict 2025 – What’s Happening </a></li>
+        <li><a href="blog7.html"> > India vs Pakistan – Military Comparison 2025</a></li>
+        <li><a href="blog6.htm"> > Operation Sindoor – India's Precision Strikes in Pakistan</a></li>
+        <li><a href="blog5.html"> > Caste Census in India – Understanding Its Impact</a></li>
+        <li><a href="blog4.html"> > Indus Water Treaty – Life Line to Pakistan </a></li>
+        <li><a href="blog3.html"> > Pahalgam Terror Attack – Full Report </a></li>
+      </ul>
+  
+      <h2>All Articles</h2>
+      <ul>
+        <li><a href="blog1.html"> >📰  Why BJP Rules in  India – Political Analysis</a></li>
+        <li><a href="history-of-bjp.html"> >📰  History of BJP – From Jana Sangh to Present</a></li>
+        <li><a href="bjp-welfare-scheme.html"> >📰  BJP Welfare Schemes – Transforming India</a></li>
+        <li><a href="blog2.html"> >📰  Why BJP lost in Ayodhya – Detailed Analysis</a></li>
+        <li><a href="blog3.html">>📰 Pahalgam Terror Attack – Full Report</a></li>
+        <li><a href="blog4.html"> >📰 Indus Water Treaty – Life Line to Pakistan </a></li>
+        <li><a href="blog5.html"> >📰 Caste Census in India – Understanding Its Impact</a></li>
+        <li><a href="blog7.html"> >📰 India vs Pakistan – Military Comparison 2025</a></li>
+        <li><a href="blog6.html"> >📰 Operation Sindoor – India's Precision Strikes in Pakistan</a></li>
+        <li><a href="blog8.html"> >📰 Iran vs Israel Conflict 2025 – What’s Happening </a></li>
+      </ul>
+  
+      <hr style="margin: 40px 0;" />
+  
+     
+    </section>
+  </div>
+  <footer>
+    <p><span style="color: #fff;">&copy; 2025 Political Report</span> 
+      <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-use.html">Terms of Use</a></p>
+  </footer>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Articles ",
+      "author": {
+        "@type": "Person",
+        "name": "Ashutosh Pandey"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Political Report",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://politicalreport.netlify.app/images/logo.png"
+        }
+      },
+      "datePublished": "2025-03-25",
+      "dateModified": "2025-03-25",
+      "url": "https://politicalreport.netlify.app/articles.html"
+    }
+</script>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+  const navItems = document.querySelectorAll('.nav-links li a'); // Select all menu items
+
+  // Toggle the menu on clicking the menu button
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+    menuToggle.classList.toggle('active');
+  });
+
+  // Close the menu when a link is clicked
+  navItems.forEach(item => {
+    item.addEventListener('click', () => {
+      navLinks.classList.remove('show'); // Hide the menu
+      menuToggle.classList.remove('active'); // Change the icon back
+    });
+  });
+</script> 
+
+
+</body>
+
+</html>

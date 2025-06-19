@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://politicalreport.netlify.app/sitemap.xml

@@ -1,0 +1,4 @@
+# Allow Netlify to serve static HTML files normally
+# No SPA fallback behavior
+
+# No catch-all redirect
