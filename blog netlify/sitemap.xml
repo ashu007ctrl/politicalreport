@@ -7,7 +7,12 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-
+  <url>
+    <loc>https://politicalreport.netlify.app/dubai-under-british-india.html</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.99</priority>
+  </url>
   <url>
     <loc>https://politicalreport.netlify.app/blog1.html</loc>
     <lastmod>2025-05-03</lastmod>
