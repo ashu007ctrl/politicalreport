@@ -23,6 +23,9 @@
   <meta property="og:site_name" content="Political Report" />
 
   <meta name="twitter:card" content="summary_large_image" />
+<meta name="language" content="en" />
+<meta name="theme-color" content="#ffffff" />
+
   <meta name="twitter:title" content="When Dubai Almost Became Part of British India" />
   <meta name="twitter:description" content="Discover how Dubai and Gulf states were once governed from India, nearly becoming part of British India." />
   <meta name="twitter:image" content="https://politicalreport.netlify.app/images/british-empire.jpg" />
@@ -110,7 +113,6 @@
 
 <p>To stay updated and for reading more articles, check out my <a href="articles.html">Articles</a> page. Also read <a href="blog8.html">Iran vs Israel</a> for latest Middle East conflicts. For more historical and political insights, visit the <a href="index.html">Political Report Home Page</a>.</p>
 
-</p>
 
 <h3>Credits and Sources</h3>
 <ul>
@@ -199,52 +201,20 @@
       });
     });
   </script>
-  {
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Was Dubai part of British India?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, Dubai and other Gulf states such as Abu Dhabi and Oman were under British India's control as protectorates until 1947."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "When were the Gulf states separated from India?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most Gulf protectorates, including Dubai, were separated from India on April 1, 1947, just before India's independence."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What role did India play in administering the Gulf region?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The Gulf was administered from Delhi by British India's Political Service. Indian currency and Urdu language were used for governance."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Did British India issue passports for Gulf countries?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, during the British Raj, Indian passports covered Gulf countries like Aden, Dubai, and Oman for travel purposes."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why is this history not widely known?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "This history is often overlooked because British maps deliberately hid the Gulf’s ties to India to avoid diplomatic friction with the Ottoman Empire."
-      }
-    }
+    { "@type": "Question", "name": "Was Dubai part of British India?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, Dubai and other Gulf states such as Abu Dhabi and Oman were under British India's control as protectorates until 1947." } },
+    { "@type": "Question", "name": "When were the Gulf states separated from India?", "acceptedAnswer": { "@type": "Answer", "text": "Most Gulf protectorates, including Dubai, were separated from India on April 1, 1947, just before India's independence." } },
+    { "@type": "Question", "name": "What role did India play in administering the Gulf region?", "acceptedAnswer": { "@type": "Answer", "text": "The Gulf was administered from Delhi by British India's Political Service. Indian currency and Urdu language were used for governance." } },
+    { "@type": "Question", "name": "Did British India issue passports for Gulf countries?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, during the British Raj, Indian passports covered Gulf countries like Aden, Dubai, and Oman for travel purposes." } },
+    { "@type": "Question", "name": "Why is this history not widely known?", "acceptedAnswer": { "@type": "Answer", "text": "This history is often overlooked because British maps deliberately hid the Gulf’s ties to India to avoid diplomatic friction with the Ottoman Empire." } }
   ]
 }
+</script>
+
 
 </body>
 
