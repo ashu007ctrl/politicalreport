@@ -19,6 +19,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.98</priority>
   </url>
+  <url>
+    <loc>https://politicalreport.netlify.app/Trump2.0vs1.0.html</loc>
+    <lastmod>2025-07-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.98</priority>
+  </url>
    <url>
     <loc>https://politicalreport.netlify.app/blog9.html</loc>
     <lastmod>2025-06-19</lastmod>
