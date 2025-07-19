@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO Meta Tags -->
+  <title>Donald Trump 2.0 vs 1.0: Leadership, Policies & Impact Compared | Political Report</title>
+  <meta name="description" content="Compare Donald Trump 2.0 and 1.0 across leadership, policies, governance style, and achievements. A simplified and SEO-friendly political comparison." />
+  <meta name="keywords" content="Donald Trump 2.0 vs 1.0, Trump presidency, US politics 2025, Republican leadership, Trump comparison" />
+  <meta name="author" content="Political Report" />
+
+  <!-- Open Graph / Facebook Meta Tags -->
+  <meta property="og:title" content="Donald Trump 2.0 vs 1.0: Leadership & Policies Compared" />
+  <meta property="og:description" content="An insightful comparison of Donald Trump’s first and second term in office. Fact-based, simple political analysis." />
+  <meta property="og:image" content="https://politicalreport.netlify.app/images/trump2vs1.jpg" />
+  <meta property="og:url" content="https://politicalreport.netlify.app/blog/trump2v1.html" />
+  <meta property="og:type" content="article" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Donald Trump 2.0 vs 1.0: Leadership & Policies Compared" />
+  <meta name="twitter:description" content="Compare Trump 2.0 and 1.0 on policies, governance, and leadership style. See what’s changed in his return to power." />
+  <meta name="twitter:image" content="https://politicalreport.netlify.app/images/trump2vs1.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+  <!-- Canonical Link -->
+  <link rel="canonical" href="https://politicalreport.netlify.app/blog/trump2v1.html" />
+
+  <!-- Fonts & Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Donald Trump 2.0 vs 1.0: Leadership, Policies & Impact Compared",
+    "author": {
+      "@type": "Person",
+      "name": "Ashutosh Pandey"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Political Report",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://politicalreport.netlify.app/logo.png"
+      }
+    },
+    "datePublished": "2025-07-15",
+    "dateModified": "2025-07-15",
+    "image": "https://politicalreport.netlify.app/images/trump2vs1.jpg",
+    "description": "Compare Donald Trump 2.0 and 1.0 across leadership, policies, governance style, and achievements. A simplified and SEO-friendly political comparison.",
+    "url": "https://politicalreport.netlify.app/blog/trump2v1.html"
+  }
+  </script>
+
+  <style>
+    .comparison-table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      margin-bottom: 20px;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+      white-space: nowrap;
+    }
+
+    .comparison-table th {
+      background-color: #f5f5f5;
+      font-weight: 600;
+    }
+
+    .comparison-table img.profile-pic {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+    .blog-hero-img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .comparison-table,
+      .comparison-table thead,
+      .comparison-table tbody,
+      .comparison-table th,
+      .comparison-table td,
+      .comparison-table tr {
+        display: block;
+        width: 100%;
+      }
+
+      .comparison-table thead {
+        display: none;
+      }
+
+      .comparison-table tr {
+        margin-bottom: 20px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: visible;
+        padding: 10px 0;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      .comparison-table td {
+        padding: 10px 14px;
+        font-size: 14px;
+        border: none;
+        border-bottom: 1px solid #eee;
+        width: 100%;
+        box-sizing: border-box;
+        white-space: normal;
+      }
+
+      .comparison-table td:first-child {
+        font-weight: bold;
+        background: #f0f0f0;
+        color: #222;
+        border-bottom: none;
+      }
+
+      .comparison-table td:nth-child(2)::before {
+        content: "🟥 Trump 1.0: ";
+        font-weight: 500;
+        color: #d10000;
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .comparison-table td:nth-child(3)::before {
+        content: "🟦 Trump 2.0: ";
+        font-weight: 500;
+        color: #0033cc;
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .comparison-table td:nth-child(2),
+      .comparison-table td:nth-child(3) {
+        display: block;
+      }
+
+      .comparison-table img.profile-pic {
+        width: 40px;
+        height: 40px;
+      }
+
+      .blog-hero-img {
+        border-radius: 6px;
+        margin: 15px auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="modern-navbar">
+      <div class="brand">POLITICAL REPORT</div>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="about.html">About Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main-content">
+    <section>
+      <h1>Donald Trump 2.0 vs 1.0: What’s Changed in Leadership?</h1>
+
+      <img src="images/trump2vs1.jpg" alt="Trump 2.0 vs Trump 1.0" class="blog-hero-img" loading="lazy" />
+
+      <p>Donald Trump’s return to the White House in 2025, dubbed <strong>Trump 2.0</strong>, has reignited debates about his leadership style, policies, and impact compared to his first term. Let’s break down how <strong>Trump 2.0</strong> differs from <strong>Trump 1.0</strong>.</p>
+
+      <h2>Comparison Table: Trump 1.0 vs Trump 2.0</h2>
+
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th><img src="images/trump1.jpg" alt="Trump 1.0" class="profile-pic" loading="lazy"> Trump 1.0 (2017–2021)</th>
+              <th><img src="images/trump2.jpg" alt="Trump 2.0" class="profile-pic" loading="lazy"> Trump 2.0 (2025–?)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Leadership Style</td>
+              <td>Unpredictable, outsider, anti-establishment</td>
+              <td>More calculated, strategic, focused on legacy</td>
+            </tr>
+            <tr>
+              <td>Domestic Policies</td>
+              <td>Tax cuts, deregulation, immigration crackdown</td>
+              <td>Technology growth, AI regulation, trade revival</td>
+            </tr>
+            <tr>
+              <td>Foreign Policy</td>
+              <td>“America First,” trade wars with China</td>
+              <td>Stronger alliances, tougher on cyber threats</td>
+            </tr>
+            <tr>
+              <td>Public Perception</td>
+              <td>Polarizing, strong base but widespread protests</td>
+              <td>Seen as experienced, more pragmatic than before</td>
+            </tr>
+            <tr>
+              <td>Key Focus Areas</td>
+              <td>Economic growth, border security</td>
+              <td>AI economy, energy dominance, national security</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Leadership Evolution</h2>
+      <p><strong>Trump 1.0</strong> entered the White House as a political outsider, challenging Washington norms and pushing controversial policies. His approach was bold but often chaotic.</p>
+      <p><strong>Trump 2.0</strong> comes with experience and lessons from his previous term, making him more disciplined and focused on solidifying his long-term impact.</p>
+
+      <h2>Policy Shifts</h2>
+      <p>In his first term, Trump prioritized tax reforms, trade wars, and immigration. In his second stint, the focus has shifted toward AI, energy independence, and strengthening the U.S. position in emerging technologies.</p>
+
+      <h2>Public Opinion</h2>
+      <p>While Trump 1.0 was loved by his base but disliked by moderates, Trump 2.0 seems to have won back some independents by presenting a more stable leadership image.</p>
+
+      <h2>Final Thoughts</h2>
+      <p>Trump 2.0 is not just a repeat of the past—it’s a more refined version of his leadership. Whether it will shape America positively or lead to more division remains to be seen.</p>
+
+      <p>Read more U.S. political analyses in our <a href="articles.html">latest articles</a>.</p>
+    </section>
+  </div>
+
+  <footer>
+    <p><span>&copy; 2025 Political Report</span>
+      <a href="privacy-policy.html">Privacy Policy</a> |
+      <a href="terms-of-use.html">Terms of Use</a>
+    </p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    const navItems = document.querySelectorAll('.nav-links li a');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+      menuToggle.classList.toggle('active');
+    });
+
+    navItems.forEach(item => {
+      item.addEventListener('click', () => {
+        navLinks.classList.remove('show');
+        menuToggle.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO Meta Tags -->
+  <title>Donald Trump 2.0 vs 1.0: Leadership, Policies & Impact Compared | Political Report</title>
+  <meta name="description" content="Compare Donald Trump 2.0 and 1.0 across leadership, policies, governance style, and achievements. A simplified and SEO-friendly political comparison." />
+  <meta name="keywords" content="Donald Trump 2.0 vs 1.0, Trump presidency, US politics 2025, Republican leadership, Trump comparison" />
+  <meta name="author" content="Political Report" />
+
+  <!-- Open Graph / Facebook Meta Tags -->
+  <meta property="og:title" content="Donald Trump 2.0 vs 1.0: Leadership & Policies Compared" />
+  <meta property="og:description" content="An insightful comparison of Donald Trump’s first and second term in office. Fact-based, simple political analysis." />
+  <meta property="og:image" content="https://politicalreport.netlify.app/images/trump2vs1.jpg" />
+  <meta property="og:url" content="https://politicalreport.netlify.app/blog/trump2v1.html" />
+  <meta property="og:type" content="article" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Donald Trump 2.0 vs 1.0: Leadership & Policies Compared" />
+  <meta name="twitter:description" content="Compare Trump 2.0 and 1.0 on policies, governance, and leadership style. See what’s changed in his return to power." />
+  <meta name="twitter:image" content="https://politicalreport.netlify.app/images/trump2vs1.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+  <!-- Canonical Link -->
+  <link rel="canonical" href="https://politicalreport.netlify.app/blog/trump2v1.html" />
+
+  <!-- Fonts & Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Donald Trump 2.0 vs 1.0: Leadership, Policies & Impact Compared",
+    "author": {
+      "@type": "Person",
+      "name": "Ashutosh Pandey"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Political Report",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://politicalreport.netlify.app/logo.png"
+      }
+    },
+    "datePublished": "2025-07-15",
+    "dateModified": "2025-07-15",
+    "image": "https://politicalreport.netlify.app/images/trump2vs1.jpg",
+    "description": "Compare Donald Trump 2.0 and 1.0 across leadership, policies, governance style, and achievements. A simplified and SEO-friendly political comparison.",
+    "url": "https://politicalreport.netlify.app/blog/trump2v1.html"
+  }
+  </script>
+
+  <style>
+    .comparison-table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      margin-bottom: 20px;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+      white-space: nowrap;
+    }
+
+    .comparison-table th {
+      background-color: #f5f5f5;
+      font-weight: 600;
+    }
+
+    .comparison-table img.profile-pic {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+    .blog-hero-img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .comparison-table,
+      .comparison-table thead,
+      .comparison-table tbody,
+      .comparison-table th,
+      .comparison-table td,
+      .comparison-table tr {
+        display: block;
+        width: 100%;
+      }
+
+      .comparison-table thead {
+        display: none;
+      }
+
+      .comparison-table tr {
+        margin-bottom: 20px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: visible;
+        padding: 10px 0;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      .comparison-table td {
+        padding: 10px 14px;
+        font-size: 14px;
+        border: none;
+        border-bottom: 1px solid #eee;
+        width: 100%;
+        box-sizing: border-box;
+        white-space: normal;
+      }
+
+      .comparison-table td:first-child {
+        font-weight: bold;
+        background: #f0f0f0;
+        color: #222;
+        border-bottom: none;
+      }
+
+      .comparison-table td:nth-child(2)::before {
+        content: "🟥 Trump 1.0: ";
+        font-weight: 500;
+        color: #d10000;
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .comparison-table td:nth-child(3)::before {
+        content: "🟦 Trump 2.0: ";
+        font-weight: 500;
+        color: #0033cc;
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .comparison-table td:nth-child(2),
+      .comparison-table td:nth-child(3) {
+        display: block;
+      }
+
+      .comparison-table img.profile-pic {
+        width: 40px;
+        height: 40px;
+      }
+
+      .blog-hero-img {
+        border-radius: 6px;
+        margin: 15px auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="modern-navbar">
+      <div class="brand">POLITICAL REPORT</div>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="about.html">About Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main-content">
+    <section>
+      <h1>Donald Trump 2.0 vs 1.0: What’s Changed in Leadership?</h1>
+
+      <img src="images/trump2vs1.jpg" alt="Trump 2.0 vs Trump 1.0" class="blog-hero-img" loading="lazy" />
+
+      <p>Donald Trump’s return to the White House in 2025, dubbed <strong>Trump 2.0</strong>, has reignited debates about his leadership style, policies, and impact compared to his first term. Let’s break down how <strong>Trump 2.0</strong> differs from <strong>Trump 1.0</strong>.</p>
+
+      <h2>Comparison Table: Trump 1.0 vs Trump 2.0</h2>
+
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th><img src="images/trump1.jpg" alt="Trump 1.0" class="profile-pic" loading="lazy"> Trump 1.0 (2017–2021)</th>
+              <th><img src="images/trump2.jpg" alt="Trump 2.0" class="profile-pic" loading="lazy"> Trump 2.0 (2025–?)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Leadership Style</td>
+              <td>Unpredictable, outsider, anti-establishment</td>
+              <td>More calculated, strategic, focused on legacy</td>
+            </tr>
+            <tr>
+              <td>Domestic Policies</td>
+              <td>Tax cuts, deregulation, immigration crackdown</td>
+              <td>Technology growth, AI regulation, trade revival</td>
+            </tr>
+            <tr>
+              <td>Foreign Policy</td>
+              <td>“America First,” trade wars with China</td>
+              <td>Stronger alliances, tougher on cyber threats</td>
+            </tr>
+            <tr>
+              <td>Public Perception</td>
+              <td>Polarizing, strong base but widespread protests</td>
+              <td>Seen as experienced, more pragmatic than before</td>
+            </tr>
+            <tr>
+              <td>Key Focus Areas</td>
+              <td>Economic growth, border security</td>
+              <td>AI economy, energy dominance, national security</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Leadership Evolution</h2>
+      <p><strong>Trump 1.0</strong> entered the White House as a political outsider, challenging Washington norms and pushing controversial policies. His approach was bold but often chaotic.</p>
+      <p><strong>Trump 2.0</strong> comes with experience and lessons from his previous term, making him more disciplined and focused on solidifying his long-term impact.</p>
+
+      <h2>Policy Shifts</h2>
+      <p>In his first term, Trump prioritized tax reforms, trade wars, and immigration. In his second stint, the focus has shifted toward AI, energy independence, and strengthening the U.S. position in emerging technologies.</p>
+
+      <h2>Public Opinion</h2>
+      <p>While Trump 1.0 was loved by his base but disliked by moderates, Trump 2.0 seems to have won back some independents by presenting a more stable leadership image.</p>
+
+      <h2>Final Thoughts</h2>
+      <p>Trump 2.0 is not just a repeat of the past—it’s a more refined version of his leadership. Whether it will shape America positively or lead to more division remains to be seen.</p>
+
+      <p>Read more U.S. political analyses in our <a href="articles.html">latest articles</a>.</p>
+    </section>
+  </div>
+
+  <footer>
+    <p><span>&copy; 2025 Political Report</span>
+      <a href="privacy-policy.html">Privacy Policy</a> |
+      <a href="terms-of-use.html">Terms of Use</a>
+    </p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    const navItems = document.querySelectorAll('.nav-links li a');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+      menuToggle.classList.toggle('active');
+    });
+
+    navItems.forEach(item => {
+      item.addEventListener('click', () => {
+        navLinks.classList.remove('show');
+        menuToggle.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO Meta Tags -->
+  <title>Donald Trump 2.0 vs 1.0: Leadership, Policies & Impact Compared | Political Report</title>
+  <meta name="description" content="Compare Donald Trump 2.0 and 1.0 across leadership, policies, governance style, and achievements. A simplified and SEO-friendly political comparison." />
+  <meta name="keywords" content="Donald Trump 2.0 vs 1.0, Trump presidency, US politics 2025, Republican leadership, Trump comparison" />
+  <meta name="author" content="Political Report" />
+
+  <!-- Open Graph / Facebook Meta Tags -->
+  <meta property="og:title" content="Donald Trump 2.0 vs 1.0: Leadership & Policies Compared" />
+  <meta property="og:description" content="An insightful comparison of Donald Trump’s first and second term in office. Fact-based, simple political analysis." />
+  <meta property="og:image" content="https://politicalreport.netlify.app/images/trump2vs1.jpg" />
+  <meta property="og:url" content="https://politicalreport.netlify.app/blog/trump2v1.html" />
+  <meta property="og:type" content="article" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Donald Trump 2.0 vs 1.0: Leadership & Policies Compared" />
+  <meta name="twitter:description" content="Compare Trump 2.0 and 1.0 on policies, governance, and leadership style. See what’s changed in his return to power." />
+  <meta name="twitter:image" content="https://politicalreport.netlify.app/images/trump2vs1.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+  <!-- Canonical Link -->
+  <link rel="canonical" href="https://politicalreport.netlify.app/blog/trump2v1.html" />
+
+  <!-- Fonts & Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Donald Trump 2.0 vs 1.0: Leadership, Policies & Impact Compared",
+    "author": {
+      "@type": "Person",
+      "name": "Ashutosh Pandey"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Political Report",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://politicalreport.netlify.app/logo.png"
+      }
+    },
+    "datePublished": "2025-07-15",
+    "dateModified": "2025-07-15",
+    "image": "https://politicalreport.netlify.app/images/trump2vs1.jpg",
+    "description": "Compare Donald Trump 2.0 and 1.0 across leadership, policies, governance style, and achievements. A simplified and SEO-friendly political comparison.",
+    "url": "https://politicalreport.netlify.app/blog/trump2v1.html"
+  }
+  </script>
+
+  <style>
+    .comparison-table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      margin-bottom: 20px;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+      white-space: nowrap;
+    }
+
+    .comparison-table th {
+      background-color: #f5f5f5;
+      font-weight: 600;
+    }
+
+    .comparison-table img.profile-pic {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+    .blog-hero-img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .comparison-table,
+      .comparison-table thead,
+      .comparison-table tbody,
+      .comparison-table th,
+      .comparison-table td,
+      .comparison-table tr {
+        display: block;
+        width: 100%;
+      }
+
+      .comparison-table thead {
+        display: none;
+      }
+
+      .comparison-table tr {
+        margin-bottom: 20px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: visible;
+        padding: 10px 0;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      .comparison-table td {
+        padding: 10px 14px;
+        font-size: 14px;
+        border: none;
+        border-bottom: 1px solid #eee;
+        width: 100%;
+        box-sizing: border-box;
+        white-space: normal;
+      }
+
+      .comparison-table td:first-child {
+        font-weight: bold;
+        background: #f0f0f0;
+        color: #222;
+        border-bottom: none;
+      }
+
+      .comparison-table td:nth-child(2)::before {
+        content: "🟥 Trump 1.0: ";
+        font-weight: 500;
+        color: #d10000;
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .comparison-table td:nth-child(3)::before {
+        content: "🟦 Trump 2.0: ";
+        font-weight: 500;
+        color: #0033cc;
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .comparison-table td:nth-child(2),
+      .comparison-table td:nth-child(3) {
+        display: block;
+      }
+
+      .comparison-table img.profile-pic {
+        width: 40px;
+        height: 40px;
+      }
+
+      .blog-hero-img {
+        border-radius: 6px;
+        margin: 15px auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="modern-navbar">
+      <div class="brand">POLITICAL REPORT</div>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="about.html">About Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main-content">
+    <section>
+      <h1>Donald Trump 2.0 vs 1.0: What’s Changed in Leadership?</h1>
+
+      <img src="images/trump2vs1.jpg" alt="Trump 2.0 vs Trump 1.0" class="blog-hero-img" loading="lazy" />
+
+      <p>Donald Trump’s return to the White House in 2025, dubbed <strong>Trump 2.0</strong>, has reignited debates about his leadership style, policies, and impact compared to his first term. Let’s break down how <strong>Trump 2.0</strong> differs from <strong>Trump 1.0</strong>.</p>
+
+      <h2>Comparison Table: Trump 1.0 vs Trump 2.0</h2>
+
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th><img src="images/trump1.jpg" alt="Trump 1.0" class="profile-pic" loading="lazy"> Trump 1.0 (2017–2021)</th>
+              <th><img src="images/trump2.jpg" alt="Trump 2.0" class="profile-pic" loading="lazy"> Trump 2.0 (2025–?)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Leadership Style</td>
+              <td>Unpredictable, outsider, anti-establishment</td>
+              <td>More calculated, strategic, focused on legacy</td>
+            </tr>
+            <tr>
+              <td>Domestic Policies</td>
+              <td>Tax cuts, deregulation, immigration crackdown</td>
+              <td>Technology growth, AI regulation, trade revival</td>
+            </tr>
+            <tr>
+              <td>Foreign Policy</td>
+              <td>“America First,” trade wars with China</td>
+              <td>Stronger alliances, tougher on cyber threats</td>
+            </tr>
+            <tr>
+              <td>Public Perception</td>
+              <td>Polarizing, strong base but widespread protests</td>
+              <td>Seen as experienced, more pragmatic than before</td>
+            </tr>
+            <tr>
+              <td>Key Focus Areas</td>
+              <td>Economic growth, border security</td>
+              <td>AI economy, energy dominance, national security</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Leadership Evolution</h2>
+      <p><strong>Trump 1.0</strong> entered the White House as a political outsider, challenging Washington norms and pushing controversial policies. His approach was bold but often chaotic.</p>
+      <p><strong>Trump 2.0</strong> comes with experience and lessons from his previous term, making him more disciplined and focused on solidifying his long-term impact.</p>
+
+      <h2>Policy Shifts</h2>
+      <p>In his first term, Trump prioritized tax reforms, trade wars, and immigration. In his second stint, the focus has shifted toward AI, energy independence, and strengthening the U.S. position in emerging technologies.</p>
+
+      <h2>Public Opinion</h2>
+      <p>While Trump 1.0 was loved by his base but disliked by moderates, Trump 2.0 seems to have won back some independents by presenting a more stable leadership image.</p>
+
+      <h2>Final Thoughts</h2>
+      <p>Trump 2.0 is not just a repeat of the past—it’s a more refined version of his leadership. Whether it will shape America positively or lead to more division remains to be seen.</p>
+
+      <p>Read more U.S. political analyses in our <a href="articles.html">latest articles</a>.</p>
+    </section>
+  </div>
+
+  <footer>
+    <p><span>&copy; 2025 Political Report</span>
+      <a href="privacy-policy.html">Privacy Policy</a> |
+      <a href="terms-of-use.html">Terms of Use</a>
+    </p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    const navItems = document.querySelectorAll('.nav-links li a');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+      menuToggle.classList.toggle('active');
+    });
+
+    navItems.forEach(item => {
+      item.addEventListener('click', () => {
+        navLinks.classList.remove('show');
+        menuToggle.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+
+</html>
