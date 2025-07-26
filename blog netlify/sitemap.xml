@@ -8,10 +8,17 @@
     <priority>1.0</priority>
   </url>
     <url>
+    <loc>https://politicalreport.netlify.app/kendra-scott-engagement-2025.html</loc>
+    <lastmod>2025-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.98</priority>
+        </url>
+       <url>
     <loc>https://politicalreport.netlify.app/india-tour-of-england-2025.html</loc>
     <lastmod>2025-07-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.98</priority>
+  </url>
   </url>
    <url>
     <loc>https://politicalreport.netlify.app/thailandvscambodia.html</loc>
