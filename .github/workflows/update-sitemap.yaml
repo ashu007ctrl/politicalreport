@@ -1,4 +1,4 @@
-name: Auto Update Sitemap
+name: Auto Update Sitemap & Articles
 
 on:
   push:
@@ -6,17 +6,16 @@ on:
       - main
     paths:
       - '**.html'
-      - '**/index.html'
 
 jobs:
-  generate-sitemap:
+  update-files:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Generate Sitemap with Last Modified Date
+      - name: Generate sitemap.xml with lastmod
         run: |
           echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" > sitemap.xml
           echo "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">" >> sitemap.xml
@@ -33,12 +32,24 @@ jobs:
 
           echo "</urlset>" >> sitemap.xml
 
-      - name: Commit and Push Sitemap
-  env:
-    PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
-  run: |
-    git config user.name "github-actions"
-    git config user.email "actions@github.com"
-    git add sitemap.xml
-    git commit -m "🧭 Auto update sitemap with lastmod" || echo "No changes to commit"
-    git push https://x-access-token:${PAT_TOKEN}@github.com/${{ github.repository }} HEAD:main
+      - name: Generate articles.html
+        run: |
+          echo "<!DOCTYPE html>" > articles.html
+          echo "<html><head><title>Articles</title></head><body>" >> articles.html
+          echo "<h1>All Articles</h1><ul>" >> articles.html
+
+          find . -name "*.html" ! -name "index.html" ! -name "404.html" ! -name "articles.html" | while read file; do
+            filename=$(basename "$file")
+            url="https://politicalreport.netlify.app/${file#./}"
+            echo "<li><a href=\"$url\">$filename</a></li>" >> articles.html
+          done
+
+          echo "</ul></body></html>" >> articles.html
+
+      - name: Commit and Push sitemap & articles
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add sitemap.xml articles.html
+          git commit -m "🔁 Auto-update sitemap.xml & articles.html" || echo "No changes to commit"
+          git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }} HEAD:main
