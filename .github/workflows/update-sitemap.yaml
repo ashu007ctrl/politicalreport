@@ -1,0 +1,44 @@
+name: Auto Update Sitemap
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**.html'
+      - '**/index.html'
+
+jobs:
+  generate-sitemap:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Generate Sitemap with Last Modified Date
+        run: |
+          echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" > sitemap.xml
+          echo "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">" >> sitemap.xml
+          
+          find . -name "*.html" ! -name "google*.html" ! -name "404.html" | while read file; do
+            url="https://politicalreport.netlify.app/${file#./}"
+            
+            # Try to get last modified date from git history
+            lastmod=$(git log -1 --format="%ad" --date=short "$file" 2>/dev/null || date +%Y-%m-%d)
+            
+            echo "  <url>" >> sitemap.xml
+            echo "    <loc>$url</loc>" >> sitemap.xml
+            echo "    <lastmod>$lastmod</lastmod>" >> sitemap.xml
+            echo "  </url>" >> sitemap.xml
+          done
+          
+          echo "</urlset>" >> sitemap.xml
+
+      - name: Commit Sitemap
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sitemap.xml
+          git commit -m "🧭 Auto update sitemap with lastmod" || echo "No changes to commit"
+          git push
