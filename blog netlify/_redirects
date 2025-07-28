@@ -1,33 +1,30 @@
-# Prevent SPA fallback (optional, keeps static HTML routing intact)
-/*    /index.html   404
+# ✅ Clean URLs served from .html files (NO redirect chain, faster load)
 
-# Redirect homepage
-/index.html                /                        301
+# Home
+/                      /index.html              200
 
-# Static pages
-/about.html                /about/                  301
-/contact.html              /contact/                301
-/privacy-policy.html       /privacy-policy/         301
-/terms-of-use.html         /terms-of-use/           301
+# Pages
+/about/                /about.html              200
+/contact/              /contact.html            200
+/privacy-policy/       /privacy-policy.html     200
+/terms-of-use/         /terms-of-use.html       200
+/articles/             /articles.html           200
 
-# Blog/article pages
-/kendra-scott-engagement-2025.html      /kendra-scott-engagement-2025/      301
-/india-tour-of-england-2025.html        /india-tour-of-england-2025/        301
-/thailand-vs-cambodia.html              /thailand-vs-cambodia/              301
-/when-dubai-almost-became-part-of-india.html  /when-dubai-almost-became-part-of-india/  301
-/why-bjp-rules-india.html               /why-bjp-rules-india/               301
-/trump2v1.html                          /trump2v1/                           301
-/yogi-vs-akhilesh.html                  /yogi-vs-akhilesh/                   301
-/why-bjp-lost-ayodhya.html             /why-bjp-lost-ayodhya/               301
-/pahalgam-attack.html                  /pahalgam-attack/                    301
-/operation-sindoor.html                /operation-sindoor/                  301
-/indus-water-treaty.html               /indus-water-treaty/                 301
-/caste-census.html                     /caste-census/                       301
-/india-pakistan-military-comparison.html  /india-pakistan-military-comparison/  301
-/iran-vs-israel.html                   /iran-vs-israel/                     301
-/modi-vs-rahul.html                    /modi-vs-rahul/                      301
-/bjp-welfare-scheme.html              /bjp-welfare-scheme/                 301
-/history-of-bjp.html                  /history-of-bjp/                     301
-
-# Article index page
-/articles.html                         /articles/                           301
+# Articles
+/kendra-scott-engagement-2025/        /kendra-scott-engagement-2025.html        200
+/india-tour-of-england-2025/          /india-tour-of-england-2025.html          200
+/thailand-vs-cambodia/                /thailand-vs-cambodia.html                200
+/when-dubai-almost-became-part-of-india/  /when-dubai-almost-became-part-of-india.html  200
+/why-bjp-rules-india/                 /why-bjp-rules-india.html                 200
+/trump2v1/                            /trump2v1.html                            200
+/yogi-vs-akhilesh/                    /yogi-vs-akhilesh.html                    200
+/why-bjp-lost-ayodhya/               /why-bjp-lost-ayodhya.html               200
+/pahalgam-attack/                    /pahalgam-attack.html                    200
+/operation-sindoor/                  /operation-sindoor.html                  200
+/indus-water-treaty/                 /indus-water-treaty.html                 200
+/caste-census/                       /caste-census.html                       200
+/india-pakistan-military-comparison/ /india-pakistan-military-comparison.html 200
+/iran-vs-israel/                     /iran-vs-israel.html                     200
+/modi-vs-rahul/                      /modi-vs-rahul.html                      200
+/bjp-welfare-scheme/                /bjp-welfare-scheme.html                200
+/history-of-bjp/                    /history-of-bjp.html                    200
