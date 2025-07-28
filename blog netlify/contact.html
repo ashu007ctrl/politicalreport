@@ -9,81 +9,73 @@
   <meta property="og:title" content="Contact Us – Political Report" />
   <meta property="og:description" content="Reach out to the team at Political Report. We welcome your feedback and inquiries." />
   <meta property="og:image" content="https://politicalreport.netlify.app/images/contact-banner.jpg" />
-  <meta property="og:url" content="https://politicalreport.netlify.app/contact.html" />
+  <meta property="og:url" content="https://politicalreport.netlify.app/contact/" />
   <meta name="twitter:card" content="summary_large_image" />
-<meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow">
   <title>Contact Us - Political Report</title>
-  <link rel="canonical" href="https://politicalreport.netlify.app/contact.html" />
+  <link rel="canonical" href="https://politicalreport.netlify.app/contact/" />
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-  <link rel="stylesheet" href="style.css" />
-  <!-- Preload and preconnect for faster font loading -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" media="all">
-
-  
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" media="all">
 </head>
 
 <body>
   <header>
     <nav class="modern-navbar">
       <div class="brand">POLITICAL REPORT</div>
-    
+
       <!-- Mobile Menu Toggle -->
       <div class="menu-toggle" id="menu-toggle">
         <span></span>
         <span></span>
         <span></span>
       </div>
-    
+
       <!-- Slide-in Navigation -->
       <ul class="nav-links" id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="articles.html">Articles</a></li>
-        <li><a href="about.html">About Me</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/articles/">Articles</a></li>
+        <li><a href="/about/">About Me</a></li>
       </ul>
     </nav>
-    
-    
-    
   </header>
 
- 
-<div class="main-content">
-        <section>
-          <h1>Contact Us</h1>
-          <p>If you have any questions, suggestions, or feedback, feel free to reach out to us using the contact details below.</p>
+  <div class="main-content">
+    <section>
+      <h1>Contact Us</h1>
+      <p>If you have any questions, suggestions, or feedback, feel free to reach out to us using the contact details below.</p>
 
-          <h2>Email</h2>
-          <p><a href="mailto:ashu.8642.ap@gmail.com">ashu.8642.ap@gmail.com</a></p>
+      <h2>Email</h2>
+      <p><a href="mailto:ashu.8642.ap@gmail.com">ashu.8642.ap@gmail.com</a></p>
 
-          <h2>Phone</h2>
-          <p>+91 6307607925</p>
+      <h2>Phone</h2>
+      <p>+91 6307607925</p>
 
-          <h2>Address</h2>
-          <p>
-            Near BBD University<br />
-            Ayodhya Road<br />
-            Lucknow, Uttar Pradesh
-          </p>
+      <h2>Address</h2>
+      <p>
+        Near BBD University<br />
+        Ayodhya Road<br />
+        Lucknow, Uttar Pradesh
+      </p>
 
-          <h2>Social Media</h2>
-          <p>Follow us on:</p>
-          <ul>
-            <li><a href="#" target="_blank">Twitter</a></li>
-            <li><a href="#" target="_blank">Facebook</a></li>
-            <li><a href="#" target="_blank">LinkedIn</a></li>
-          </ul>
-        </section>
-      </div>
-    
+      <h2>Social Media</h2>
+      <p>Follow us on:</p>
+      <ul>
+        <li><a href="#" target="_blank">Twitter</a></li>
+        <li><a href="#" target="_blank">Facebook</a></li>
+        <li><a href="#" target="_blank">LinkedIn</a></li>
+      </ul>
+    </section>
+  </div>
 
   <footer>
     <p><span style="color: #fff;">&copy; 2025 Political Report</span> 
-      <a href="https://politicalreport.netlify.app/privacy-policy.html">Privacy Policy</a> | 
-      <a href="https://politicalreport.netlify.app/terms-of-use.html">Terms of Use</a>
+      <a href="/privacy-policy/">Privacy Policy</a> | 
+      <a href="/terms-of-use/">Terms of Use</a>
     </p>
   </footer>
 
@@ -108,28 +100,25 @@
         "https://linkedin.com/in/yourprofile"
       ]
     }
-    </script>
-    <script>
-      const menuToggle = document.getElementById('menu-toggle');
-      const navLinks = document.getElementById('nav-links');
-      const navItems = document.querySelectorAll('.nav-links li a'); // Select all menu items
-    
-      // Toggle the menu on clicking the menu button
-      menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('show');
-        menuToggle.classList.toggle('active');
+  </script>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    const navItems = document.querySelectorAll('.nav-links li a');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+      menuToggle.classList.toggle('active');
+    });
+
+    navItems.forEach(item => {
+      item.addEventListener('click', () => {
+        navLinks.classList.remove('show');
+        menuToggle.classList.remove('active');
       });
-    
-      // Close the menu when a link is clicked
-      navItems.forEach(item => {
-        item.addEventListener('click', () => {
-          navLinks.classList.remove('show'); // Hide the menu
-          menuToggle.classList.remove('active'); // Change the icon back
-        });
-      });
-    </script> 
-    
-    
+    });
+  </script>
 </body>
 
 </html>
