@@ -1,27 +1,24 @@
-# Prevent catch-all fallback behavior (SPA mode off)
-# Allow static HTML routing
-# No catch-all redirect
+# Prevent SPA fallback (optional, keeps static HTML routing intact)
 /*    /index.html   404
 
-# Redirect .html URLs to clean URLs (301 permanent for SEO)
-# Homepage
+# Redirect homepage
 /index.html                /                        301
 
-# Pages
+# Static pages
 /about.html                /about/                  301
 /contact.html              /contact/                301
 /privacy-policy.html       /privacy-policy/         301
 /terms-of-use.html         /terms-of-use/           301
 
-# Articles (if old .html URLs ever existed)
+# Blog/article pages
 /kendra-scott-engagement-2025.html      /kendra-scott-engagement-2025/      301
 /india-tour-of-england-2025.html        /india-tour-of-england-2025/        301
 /thailand-vs-cambodia.html              /thailand-vs-cambodia/              301
-/when-dubai-almost-became-part-of-india.html  /when-dubai-almost-became-part-of-india/ 301
+/when-dubai-almost-became-part-of-india.html  /when-dubai-almost-became-part-of-india/  301
 /why-bjp-rules-india.html               /why-bjp-rules-india/               301
-/trump2v1.html                          /trump2v1/                          301
-/yogi-vs-akhilesh.html                  /yogi-vs-akhilesh/                  301
-/why-bjp-lost-ayodhya.html             /why-bjp-lost-ayodhya/              301
+/trump2v1.html                          /trump2v1/                           301
+/yogi-vs-akhilesh.html                  /yogi-vs-akhilesh/                   301
+/why-bjp-lost-ayodhya.html             /why-bjp-lost-ayodhya/               301
 /pahalgam-attack.html                  /pahalgam-attack/                    301
 /operation-sindoor.html                /operation-sindoor/                  301
 /indus-water-treaty.html               /indus-water-treaty/                 301
@@ -32,5 +29,5 @@
 /bjp-welfare-scheme.html              /bjp-welfare-scheme/                 301
 /history-of-bjp.html                  /history-of-bjp/                     301
 
-# Articles landing page
+# Article index page
 /articles.html                         /articles/                           301
