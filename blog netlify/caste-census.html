@@ -11,7 +11,8 @@
   <meta name="keywords" content="Caste Census India, Indian Politics, Social Justice, Reservation, OBC, SC ST Data" />
   <meta name="author" content="Ashutosh Pandey" />
   <link rel="canonical" href="https://politicalreport.netlify.app/caste-census/" />
-<meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow">
+
   <!-- Open Graph Tags -->
   <meta property="og:title" content="Caste Census in India: Understanding Its Impact" />
   <meta property="og:description" content="Why caste census matters in Indian politics and society. A breakdown of arguments, implications, and government responses." />
@@ -29,13 +30,13 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
   <title>Caste Census in India – Social Justice, Politics & Future</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Preload and preconnect for faster font loading -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" media="all">
+  <link rel="stylesheet" href="/style.css" />
 
+  <!-- Preload and preconnect for faster font loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" media="all">
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -77,20 +78,18 @@
     
       <!-- Slide-in Navigation -->
       <ul class="nav-links" id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="articles.html">Articles</a></li>
-        <li><a href="about.html">About Me</a></li>
+        <li><a href="/index/">Home</a></li>
+        <li><a href="/articles/">Articles</a></li>
+        <li><a href="/about/">About Me</a></li>
+        <li><a href="/contact/">Contact Us</a></li>
       </ul>
     </nav>
-    
-    
-    
   </header>
 
   <div class="main-content">
     <section>
       <h1>Caste Census in India</h1>
-     <p><strong>Published Date : </strong> May 29, 2025</p>
+      <p><strong>Published Date : </strong> May 29, 2025</p>
 
       <p>The demand for a caste-based census in India has gained significant traction in recent years. While India conducts a general population census every decade, a detailed caste enumeration—especially for communities other than Scheduled Castes (SCs) and Scheduled Tribes (STs)—has not been carried out since 1931.</p>
 
@@ -118,37 +117,36 @@
 
       <h2>Conclusion</h2>
       <p>As India continues to grapple with questions of equity, social justice, and inclusive development, the caste census remains a contentious but crucial tool. Whether it becomes a national policy or remains state-specific will depend on future political will and consensus.</p>
-      <p>Read more about <a href="/pahalgam-attack/"> Pahalgam Terror Attack </a> ...</p>
+      <p>Read more about <a href="/pahalgam-attack/">Pahalgam Terror Attack</a> ...</p>
     </section>
   </div>
 
   <footer>
     <p><span>&copy; 2025 Political Report</span> 
-      <a href="privacy-policy.html">Privacy Policy</a> | 
-      <a href="terms-of-use.html">Terms of Use</a>
+      <a href="/privacy-policy/">Privacy Policy</a> | 
+      <a href="/terms-of-use/">Terms of Use</a>
     </p>
   </footer>
+
   <script>
     const menuToggle = document.getElementById('menu-toggle');
     const navLinks = document.getElementById('nav-links');
-    const navItems = document.querySelectorAll('.nav-links li a'); // Select all menu items
-  
-    // Toggle the menu on clicking the menu button
+    const navItems = document.querySelectorAll('.nav-links li a');
+
+    // Toggle menu on mobile
     menuToggle.addEventListener('click', () => {
       navLinks.classList.toggle('show');
       menuToggle.classList.toggle('active');
     });
-  
-    // Close the menu when a link is clicked
+
+    // Close menu on link click
     navItems.forEach(item => {
       item.addEventListener('click', () => {
-        navLinks.classList.remove('show'); // Hide the menu
-        menuToggle.classList.remove('active'); // Change the icon back
+        navLinks.classList.remove('show');
+        menuToggle.classList.remove('active');
       });
     });
-  </script> 
-  
-  
+  </script>
 </body>
 
 </html>
