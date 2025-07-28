@@ -2,144 +2,302 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Read in-depth articles on Indian politics, governance, and policy analysis by Political Report." />
-  <meta name="author" content="Ashutosh Pandey" />
-<meta name="robots" content="index, follow">
-  <meta name="keywords" content="Political Articles, Indian Politics, Government Analysis, Political Opinions, BJP, Indian Elections" />
-  <meta property="og:title" content=" Articles – In-Depth Insights by Political Report" />
-  <meta property="og:description" content="Explore well-researched political articles and opinions curated by Political Report." />
-  <meta property="og:image" content="https://politicalreport.netlify.app/images/articles-banner.jpg" />
-  <meta property="og:url" content="https://politicalreport.netlify.app/articles.html" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles | Political Report</title>
+ 
+  
+ 
+  <meta name="google-site-verification" content="IJsEUItfjW5MInVr2f-OmcGNqFBkZ-dyAMlUxaHe6qg" />
+  
+  
 
-  <link rel="canonical" href="https://politicalreport.netlify.app/articles.html" />
-  <title> Articles – Political Report</title>
+  <!-- Primary SEO Meta Tags -->
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Explore top political articles, news, and international updates with bold insights from Political Report. Stay informed with expert analysis and key takeaways.">
+  <meta name="keywords" content="Political Report, Indian politics, political articles, elections, international news, political news blog, political analysis India">
+  <meta name="author" content="Ashutosh Pandey">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Articles | Political Report">
+  <meta property="og:description" content="Browse curated political articles, national updates, and global political news with clear insights on Political Report.">
+  <meta property="og:image" content="https://politicalreport.netlify.app/logo.png">
+  <meta property="og:url" content="https://politicalreport.netlify.app/articles.html">
+  <meta property="og:site_name" content="Political Report">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Articles | Political Report – Latest Political News & Opinions">
+  <meta name="twitter:description" content="Discover sharp political articles and deep dives into national and international issues on Political Report.">
+  <meta name="twitter:image" content="https://politicalreport.netlify.app/logo.png">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://politicalreport.netlify.app/articles.html">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- Fonts Optimization -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" media="all">
+
+  <title>Articles | Political Report – Latest Political News & Opinions</title>
+
+  <!-- Main Stylesheet -->
   <link rel="stylesheet" href="style.css" />
-  <!-- Preload and preconnect for faster font loading -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" media="all">
 
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Political Articles | Political Report",
+    "description": "A curated collection of political articles and news from India and around the world. Read expert opinions and analysis on Political Report.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Political Report",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://politicalreport.netlify.app/logo.png"
+      }
+    },
+    "url": "https://politicalreport.netlify.app/articles.html"
+  }
+  </script>
+</head>
 
+  <style>
+    
+
+    .tabs-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .tab-header {
+      background: #9d0dad;
+      color: white;
+      font-weight: 600;
+      padding: 15px 25px;
+      font-size: 20px;
+      cursor: pointer;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      transition: background 0.3s ease;
+    }
+
+    .tab-header:hover {
+      background: #008264;
+    }
+
+    .tab-content {
+      display: none;
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .tab-content.active {
+      display: block;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .tab-content p {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px 0;
+      transition: transform 0.2s, color 0.2s;
+      cursor: pointer;
+      color: #1a0dab;
+    }
+
+    .tab-content p:hover {
+      transform: translateX(5px);
+      text-decoration: underline;
+      color: #9d005e;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .tab-header {
+        font-size: 18px;
+        padding: 12px 18px;
+      }
+      .tab-content {
+        font-size: 15px;
+        
+      }
+         header {
+    margin-bottom: 20px;
+  }
+    }
+    .articles-heading {
+  font-family: 'Poppins', sans-serif;
+  padding: 20px 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.articles-heading h1 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.articles-heading p {
+  font-size: 17px;
+  color: rgb(11, 5, 0);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .articles-heading {
+    padding: 15px 18px;
+  }
+
+  .articles-heading h1 {
+    font-size: 22px;
+  }
+
+  .articles-heading p {
+    font-size: 15px;
+  }
+}
+
+/* Optional fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  </style>
 </head>
 
 <body>
-  <header>
-    <nav class="modern-navbar">
-      <div class="brand">POLITICAL REPORT</div>
-    
-      <!-- Mobile Menu Toggle -->
-      <div class="menu-toggle" id="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    
-      <!-- Slide-in Navigation -->
-      <ul class="nav-links" id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="articles.html" class="active">Articles</a></li>
-        <li><a href="about.html">About Me</a></li>
-      </ul>
-    </nav>
-    
-    
-    
-  </header>
-
-  <div class="main-content">
-    <section>
-      <h1> Articles & Insights</h1>
-      <p>Welcome to the Articles section of Political Report. Here you'll find well-researched, unbiased articles exploring key political themes, government actions, policy debates, and leadership analysis.</p>
-
-      <h2>Recent Articles</h2>
-      <ul><li><a href="https://politicalreport.netlify.app/kendra-scott-engagement-2025.html"> > Kendra Scott Gets Engaged </a></li>
-         <li><a href="india-tour-of-england-2025.html"> > India Tour of England 2025 </a></li>
-           <li><a href="thailandvscombodia.html"> > Thailand vs Cambodia War 2025 </a></li>
-       <li><a href="trump2v1.html"> > Trump 2.0 vs 1.0 - Comparison </a></li>
-<li><a href="when-dubai-almost-became-part-of-india.html"> > When Dubai Almost Became Part of British India </a></li>
-        <li><a href="blog10.html"> > Narendra Modi VS Rahul Gandhi - Future PM ? </a></li>
-         <li><a href="blog9.html"> > Yogi Adityanath VS Akhilesh Yadav - Who leads better in 2025 ? </a></li>
-       
+    <header>
+        <nav class="modern-navbar">
+          <div class="brand">POLITICAL REPORT</div>
         
-      </ul>
-  
-      <h2>All Articles</h2>
-      <ul>
-        <li><a href="blog1.html"> >📰  Why BJP Rules in  India – Political Analysis</a></li>
-        <li><a href="history-of-bjp.html"> >📰  History of BJP – From Jana Sangh to Present</a></li>
-        <li><a href="bjp-welfare-scheme.html"> >📰  BJP Welfare Schemes – Transforming India</a></li>
-        <li><a href="blog2.html"> >📰  Why BJP lost in Ayodhya – Detailed Analysis</a></li>
-        <li><a href="pahalgam-attack.html">>📰 Pahalgam Terror Attack – Full Report</a></li>
-        <li><a href="indus-water-treaty.html"> >📰 Indus Water Treaty – Life Line to Pakistan </a></li>
-        <li><a href="caste-census.html"> >📰 Caste Census in India – Understanding Its Impact</a></li>
-        <li><a href="blog7.html"> >📰 India vs Pakistan – Military Comparison 2025</a></li>
-        <li><a href="operation-sindoor.html"> >📰 Operation Sindoor – India's Precision Strikes in Pakistan</a></li>
-        <li><a href="blog8.html"> >📰 Iran vs Israel Conflict 2025 – What’s Happening </a></li>
-         <li><a href="blog9.html"> >📰 Yogi Adityanath VS Akhilesh Yadav - Who leads better in 2025 ? </a></li>
-        <li><a href="blog10.html"> >📰 Narendra Modi VS Rahul Gandhi - Future PM ? </a></li>
-        <li><a href="when-dubai-almost-became-part-of-india.html"> > When Dubai Almost Became Part of British India </a></li>
+          <!-- Mobile Menu Toggle -->
+          <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         
-       <li><a href="trump2v1.html"> > 📰 Trump 2.0 vs 1.0 - Comparison </a></li>
-        <li><a href="thailandvscombodia.html"> > 📰 Thailand vs Cambodia War 2025 </a></li>
-         <li><a href="india-tour-of-england-2025.html"> >  📰 India Tour of England 2025 </a></li>
-      </ul>
-  
-      <hr style="margin: 40px 0;" />
-  
-     
-    </section>
+          <!-- Slide-in Navigation -->
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact Us </a></li>
+          </ul>
+        </nav>
+        
+        
+        
+      </header>
+      <div class="main-content">
+        <section>
+        <div class="articles-heading">
+  <h1>Articles & Insights</h1>
+  <p>
+    Welcome to the Articles section of Political Report. Here you'll find well-researched, unbiased articles exploring key political themes, government actions, policy debates, and leadership analysis.
+  </p>
+</div>
+
+
+  <div class="tabs-container">
+    <div class="tab-header" onclick="toggleTab('news')">📰 News</div>
+    <div class="tab-content" id="news">
+      <p>1. Breaking: New Parliament Bill Passed</p>
+      <p>2. Opposition Walkout During Session</p>
+    </div>
+
+    <div class="tab-header" onclick="toggleTab('articles')">📑 Articles</div>
+    <div class="tab-content" id="articles">
+       <p>  paste here </p>
+    </div>
+
+    <div class="tab-header" onclick="toggleTab('election')">🗳️ UP Politics</div>
+    <div class="tab-content" id="election">
+      <p>1. 2024 Lok Sabha Results: Full Analysis</p>
+      <p>2. Top 10 Performers This Election</p>
+    </div>
+
+    <div class="tab-header" onclick="toggleTab('international')">🌍 International</div>
+    <div class="tab-content" id="international">
+      <p>1. Modi’s Visit to the US: Key Takeaways</p>
+      <p>2. Indo-China Border Tensions</p>
+    </div>
   </div>
-  <footer>
+  
+        </section>
+    </div>
+    <footer>
     <p><span style="color: #fff;">&copy; 2025 Political Report</span> 
       <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-use.html">Terms of Use</a></p>
   </footer>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "Articles ",
-      "author": {
-        "@type": "Person",
-        "name": "Ashutosh Pandey"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Political Report",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://politicalreport.netlify.app/images/logo.png"
-        }
-      },
-      "datePublished": "2025-03-25",
-      "dateModified": "2025-07-27",
-      "url": "https://politicalreport.netlify.app/articles.html"
+     <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+        const navItems = document.querySelectorAll('.nav-links li a'); // Select all menu items
+      
+        // Toggle the menu on clicking the menu button
+        menuToggle.addEventListener('click', () => {
+          navLinks.classList.toggle('show');
+          menuToggle.classList.toggle('active');
+        });
+      
+        // Close the menu when a link is clicked
+        navItems.forEach(item => {
+          item.addEventListener('click', () => {
+            navLinks.classList.remove('show'); // Hide the menu
+            menuToggle.classList.remove('active'); // Change the icon back
+          });
+        });
+      </script> 
+      
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    function toggleTab(id) {
+      const content = document.getElementById(id);
+      const isActive = content.classList.contains('active');
+      document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+      if (!isActive) {
+        content.classList.add('active');
+      }
     }
-</script>
-<script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const navLinks = document.getElementById('nav-links');
-  const navItems = document.querySelectorAll('.nav-links li a'); // Select all menu items
-
-  // Toggle the menu on clicking the menu button
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-    menuToggle.classList.toggle('active');
-  });
-
-  // Close the menu when a link is clicked
-  navItems.forEach(item => {
-    item.addEventListener('click', () => {
-      navLinks.classList.remove('show'); // Hide the menu
-      menuToggle.classList.remove('active'); // Change the icon back
-    });
-  });
-</script> 
-
-
+  </script>
 </body>
 
 </html>
