@@ -65,8 +65,107 @@
   }
   </script>
 
-  <style>
-    /* [same styles as before — unchanged for brevity] */
+ .comparison-table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      margin-bottom: 20px;
+    }
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+    }
+    .comparison-table th,
+    .comparison-table td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+      white-space: nowrap;
+    }
+    .comparison-table th {
+      background-color: #f5f5f5;
+      font-weight: 600;
+    }
+    .comparison-table img.profile-pic {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+    .blog-hero-img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .comparison-table,
+      .comparison-table thead,
+      .comparison-table tbody,
+      .comparison-table th,
+      .comparison-table td,
+      .comparison-table tr {
+        display: block;
+        width: 100%;
+      }
+      .comparison-table thead {
+        display: none;
+      }
+      .comparison-table tr {
+        margin-bottom: 20px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: visible;
+        padding: 10px 0;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      }
+      .comparison-table td {
+        padding: 10px 14px;
+        font-size: 14px;
+        border: none;
+        border-bottom: 1px solid #eee;
+        width: 100%;
+        box-sizing: border-box;
+        white-space: normal;
+      }
+      .comparison-table td:first-child {
+        font-weight: bold;
+        background: #f0f0f0;
+        color: #222;
+        border-bottom: none;
+      }
+      .comparison-table td:nth-child(2)::before {
+        content: "🟠 Yogi Adityanath: ";
+        font-weight: 500;
+        color: #e86f00;
+        display: block;
+        margin-bottom: 4px;
+      }
+      .comparison-table td:nth-child(3)::before {
+        content: "🔵 Akhilesh Yadav: ";
+        font-weight: 500;
+        color: #0066cc;
+        display: block;
+        margin-bottom: 4px;
+      }
+      .comparison-table td:nth-child(2),
+      .comparison-table td:nth-child(3) {
+        display: block;
+      }
+      .comparison-table img.profile-pic {
+        width: 40px;
+        height: 40px;
+      }
+      .blog-hero-img {
+        border-radius: 6px;
+        margin: 15px auto;
+      }
+    }
   </style>
 </head>
 
