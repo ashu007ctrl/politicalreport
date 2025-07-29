@@ -156,10 +156,10 @@
   </url>
 
   <url>
-    <loc>https://politicalreport.netlify.app/terms-of-use/</loc>
+    <loc>https://politicalreport.netlify.app/terms-of-use.html</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
+    <priority>0.6</priority>
   </url>
 
 </urlset>
