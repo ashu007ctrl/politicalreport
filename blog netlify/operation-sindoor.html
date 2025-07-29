@@ -93,6 +93,25 @@
     padding: 0 10px;
   }
 }
+.responsive-article-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+/* Smaller image on desktop (e.g., 500px wide max) */
+@media (min-width: 768px) {
+  .responsive-article-image {
+    max-width: 500px;
+  }
+}
+
+/* Slight zoom on hover */
+.responsive-article-image:hover {
+  transform: scale(1.02);
+}
 
 </style>
 
@@ -127,11 +146,11 @@
 </div>
 
       <h2>Background: The Pahalgam Attack</h2>
-      <p>The Pahalgam attack, conducted by the militant group <em> <strong> The Resistance Front</strong></em> on 22 April, in which 26 civilians were killed . They mainly targeted Hindu tourists, although some others were also killed .</p>
-      <p> Read full detail at <a href="/pahalgam-attack/">Pahalgam Terror Attack </a> </p>
+      <p>The Pahalgam attack, conducted by the militant group <em> <strong> The Resistance Front</strong></em> on 22 April, in which 26 civilians were killed . They mainly targeted Hindu tourists, although some others were also killed .
+       Read full detail at <a href="/pahalgam-attack/">Pahalgam Terror Attack </a> </p>
 
       <h2>Execution of Operation Sindoor</h2>
-      <p>In the early hours of <strong> May 7</strong>, Indian armed forces launched Operation Sindoor with precision missile strikes on terror infrastructure facilities in Pakistan and POK, mainly targeted on Jaish-e-Mohammed and Laskar-e-Taiyaba . In this operation, no civilian or military facilities were targeted . </p>
+      <p>In the early hours of <strong> May 7</strong>, Indian armed forces launched Operation Sindoor with precision missile strikes on terror infrastructure facilities in Pakistan and POK, mainly targeted on <strong> Jaish-e-Mohammed and Laskar-e-Taiyaba</strong> . In this operation, no civilian or military facilities were targeted . </p>
        <p> Although, Pakistan military and media said that Indian Army targets civilian areas including masjids which causes civilian casualities . In this operation 9 major terror camps were targetted, few of them were totally destroyed . In response to this Pakistan military also tried to hit Indian Army key locations using drones, but they failed .</p>
       <h2>War like Situation</h2>
       <p> Due to Pakistan response, a war like situation developed then Indian Armed forces also begins to target PAK military infrastructure and  there two prominent airbases - <strong> Nur Khan Airbase </strong> and <strong> Rahim Yar Khan Airbase </strong> were destroyed .     </p>
@@ -148,8 +167,8 @@
         <li>Precision strikes destroyed advanced military capabilities of Pakistan.</li>
         <li>Diplomatic channels must remain open to prevent further escalation .</li>
       </ul>
-      <p><strong> Jai Hind </strong> </p> 
-      <p>Read more articles at <a href="/articles/">Article Page </a> of Political Report </p>
+      <p><strong> Jai Hind </strong> <br> 
+      Read more articles related to this at <a href="/articles/">Article Page </a> of Political Report </p>
     </section>
   </div>
 
