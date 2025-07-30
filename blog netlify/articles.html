@@ -6,12 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Articles | Political Report</title>
  
-  
- 
   <meta name="google-site-verification" content="IJsEUItfjW5MInVr2f-OmcGNqFBkZ-dyAMlUxaHe6qg" />
   
-  
-
   <!-- Primary SEO Meta Tags -->
   <meta name="robots" content="index, follow">
   <meta name="description" content="Explore top political articles, news, and international updates with bold insights from Political Report. Stay informed with expert analysis and key takeaways.">
@@ -44,8 +40,6 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" media="all">
 
- 
-
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="style.css" />
 
@@ -70,8 +64,6 @@
 </head>
 
   <style>
-    
-
     .tabs-container {
       max-width: 900px;
       margin: 0 auto;
@@ -140,98 +132,95 @@
       }
       .tab-content {
         font-size: 15px;
-        
       }
-         header {
-    margin-bottom: 20px;
-  }
+      header {
+        margin-bottom: 20px;
+      }
     }
+
     .articles-heading {
-  font-family: 'Poppins', sans-serif;
-  padding: 20px 25px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  margin-bottom: 20px;
-  animation: fadeIn 0.6s ease-in-out;
-}
+      font-family: 'Poppins', sans-serif;
+      padding: 20px 25px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      margin-bottom: 20px;
+      animation: fadeIn 0.6s ease-in-out;
+    }
 
-.articles-heading h1 {
-  font-size: 28px;
-  color: #222;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
+    .articles-heading h1 {
+      font-size: 28px;
+      color: #222;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
 
-.articles-heading p {
-  font-size: 17px;
-  color: rgb(11, 5, 0);
-  line-height: 1.7;
-  margin: 0;
-}
+    .articles-heading p {
+      font-size: 17px;
+      color: rgb(11, 5, 0);
+      line-height: 1.7;
+      margin: 0;
+    }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-  .articles-heading {
-    padding: 15px 18px;
-  }
+    @media (max-width: 600px) {
+      .articles-heading {
+        padding: 15px 18px;
+      }
 
-  .articles-heading h1 {
-    font-size: 22px;
-  }
+      .articles-heading h1 {
+        font-size: 22px;
+      }
 
-  .articles-heading p {
-    font-size: 15px;
-  }
-}
+      .articles-heading p {
+        font-size: 15px;
+      }
+    }
 
-/* Optional fade animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.article-links a {
-  display: flex;
-  align-items: center;
-  font-family: 'Poppins', sans-serif;
-  font-size: 17px;
-  font-weight: 600;
-  text-decoration: none;
-  color: #111;
-  background: #f5f5f5;
-  padding: 12px 16px;
-  margin-bottom: 12px;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-  position: relative;
-  counter-increment: article-counter;
-}
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-.article-links a::before {
-  content: counter(article-counter) ".";
-  font-weight: bold;
-  margin-right: 10px;
-  color: #000;
-}
+    .article-links a {
+      display: flex;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 17px;
+      font-weight: 600;
+      text-decoration: none;
+      color: #111;
+      background: #f5f5f5;
+      padding: 12px 16px;
+      margin-bottom: 12px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      position: relative;
+      counter-increment: article-counter;
+    }
 
-.article-links a:hover {
-  background-color: #e9ecef;
-  color: #007BFF;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-}
+    .article-links a::before {
+      content: counter(article-counter) ".";
+      font-weight: bold;
+      margin-right: 10px;
+      color: #000;
+    }
 
-/* Optional: Reset counter at container start */
-.article-links {
-  counter-reset: article-counter;
-}
+    .article-links a:hover {
+      background-color: #e9ecef;
+      color: #007BFF;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    }
 
+    .article-links {
+      counter-reset: article-counter;
+    }
   </style>
 </head>
 
@@ -249,136 +238,96 @@
         
           <!-- Slide-in Navigation -->
           <ul class="nav-links" id="nav-links">
-            <li><a href="index.html" >Home</a></li>
-            <li><a href="articles.html"class="active">Articles</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="articles.html" class="active">Articles</a></li>
             <li><a href="about.html">About Me</a></li>
-            <li><a href="contact.html">Contact Us </a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </nav>
-        
-        
-        
       </header>
+
       <div class="main-content">
         <section>
-        <div class="articles-heading">
-  <h1>Articles & Insights</h1>
-  <p>
-    Welcome to the Articles section of Political Report. Here you'll find well-researched, unbiased articles exploring key political themes, government actions, policy debates, and leadership analysis.
-  </p>
-</div>
+          <div class="articles-heading">
+            <h1>Articles & Insights</h1>
+            <p>
+              Welcome to the Articles section of Political Report. Here you'll find well-researched, unbiased articles exploring key political themes, government actions, policy debates, and leadership analysis.
+            </p>
+          </div>
 
+          <div class="tabs-container">
+            <div class="tab-header" onclick="toggleTab('news')">📰 News</div>
+            <div class="tab-content" id="news">
+              <div class="article-links">
+                <a href="kendra-scott-engagement-2025.html" target="_blank">Kendra Scott Gets Engaged</a>
+                <a href="trump2v1.html" target="_blank">Trump 2.0 Vs 1.0</a>
+              </div>
+            </div>
 
-  <div class="tabs-container">
-    <div class="tab-header" onclick="toggleTab('news')">📰 News</div>
-    <div class="tab-content" id="news">
-       <div class="article-links">
-   <a href="kendra-scott-engagement-2025.html" target="_blank">
-    Kendra Scott Gets Engaged 
-  </a>
-      <br>
-    <a href="trump2v1.html" target="_blank">
-   Trump 2.0 Vs 1.0
-  </a>
-    </div>
+            <div class="tab-header" onclick="toggleTab('articles')">📑 Articles</div>
+            <div class="tab-content" id="articles">
+              <div class="article-links">
+                <a href="why-bjp-rules-india.html" target="_blank">Why BJP Rules India?</a>
+                <a href="pahalgam-attack.html" target="_blank">Pahalgam Terror Attack</a>
+                <a href="operation-sindoor.html" target="_blank">Operation Sindoor</a>
+                <a href="indus-water-treaty.html" target="_blank">Indus Water Treaty</a>
+                <a href="india-pakistan-military-comparison.html" target="_blank">India Vs Pakistan : Military Comparison</a>
+                <a href="history-of-bjp.html" target="_blank">History Of BJP</a>
+                <a href="bjp-welfare-scheme.html" target="_blank">BJP Welfare Schemes</a>
+              </div>
+            </div>
 
-</div>
+            <div class="tab-header" onclick="toggleTab('election')">🗳️  Politics</div>
+            <div class="tab-content" id="election">
+              <div class="article-links">
+                <a href="why-bjp-lost-ayodhya.html" target="_blank">Why BJP lost Ayodhya 2024</a>
+                <a href="yogi-vs-akhilesh.html" target="_blank">Yogi Adityanath Vs Akhilesh Yadav</a>
+                <a href="modi-vs-rahul.html" target="_blank">Narendra Modi Vs Rahul Gandhi ! Future PM</a>
+              </div>
+            </div>
 
-    <div class="tab-header" onclick="toggleTab('articles')">📑 Articles</div>
-    <div class="tab-content" id="articles">
-   <div class="article-links">
-  <a href="why-bjp-rules-india.html" target="_blank">Why BJP Rules India?</a>
-  <a href="pahalgam-attack.html" target="_blank">Pahalgam Terror Attack</a>
-  <a href="operation-sindoor.html" target="_blank">Operation Sindoor</a>
-       <a href="indus-water-treaty.html" target="_blank">
-Indus Water Treaty
-  </a>
-       <a href="india-pakistan-military-comparison.html" target="_blank">
-  India Vs Pakistan : Military Comparison 
-  </a>
-       <a href="history-of-bjp.html" target="_blank">
-    History Of BJP
-  </a>
-       <a href="bjp-welfare-scheme.html" target="_blank">
-    BJP Welfare Schemes 
-  </a>
-</div>
-
-     
-    </div>
-
-    <div class="tab-header" onclick="toggleTab('election')">🗳️  Politics</div>
-    <div class="tab-content" id="election">
-       <div class="article-links">
-       <a href="why-bjp-lost-ayodhya.html" target="_blank">
-   Why BJP lost Ayodhya 2024
-  </a>
-       <a href="yogi-vs-akhilesh.html" target="_blank">
-   Yogi Adityanath Vs Akhilesh Yadav
-  </a>
-       <a href="modi-vs-rahul.html" target="_blank">
-Narendra Modi Vs Rahul Gandhi ! Future PM 
-  </a>
-    </div>
- </div>
-    <div class="tab-header" onclick="toggleTab('international')">🌍 International</div>
-    <div class="tab-content" id="international">
-     <div class="article-links">
-      <a href="when-dubai-almost-became-part-of-india.html" target="_blank">
-   When Dubai almost became part of India
-  </a>
-      <a href="thailand-vs-cambodia.html" target="_blank">
-   Thailand Vs Cambodia
-  </a>
-      <a href="iran-vs-israel.html" target="_blank">
-   Iran Vs Israel 2025
-  </a>
-      <a href="india-tour-of-england-2025.html" target="_blank">
-  India Tour Of England 2025 Test Series
-  </a>
-    </div>
-        </div>
-  </div>
-  
+            <div class="tab-header" onclick="toggleTab('international')">🌍 International</div>
+            <div class="tab-content" id="international">
+              <div class="article-links">
+                <a href="when-dubai-almost-became-part-of-india.html" target="_blank">When Dubai almost became part of India</a>
+                <a href="thailand-vs-cambodia.html" target="_blank">Thailand Vs Cambodia</a>
+                <a href="iran-vs-israel.html" target="_blank">Iran Vs Israel 2025</a>
+                <a href="india-tour-of-england-2025.html" target="_blank">India Tour Of England 2025 Test Series</a>
+              </div>
+            </div>
+          </div>
         </section>
-    </div>
-    <footer>
-    <p><span style="color: #fff;">&copy; 2025 Political Report</span> 
-      <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-use.html">Terms of Use</a></p>
-  </footer>
-     <script>
+      </div>
+
+      <footer>
+        <p><span style="color: #fff;">&copy; 2025 Political Report</span> 
+          <a href="privacy-policy.html">Privacy Policy</a> | 
+          <a href="terms-of-use.html">Terms of Use</a></p>
+      </footer>
+
+      <script>
         const menuToggle = document.getElementById('menu-toggle');
         const navLinks = document.getElementById('nav-links');
-        const navItems = document.querySelectorAll('.nav-links li a'); // Select all menu items
-      
-        // Toggle the menu on clicking the menu button
+        const navItems = document.querySelectorAll('.nav-links li a'); 
+        
         menuToggle.addEventListener('click', () => {
           navLinks.classList.toggle('show');
           menuToggle.classList.toggle('active');
         });
-      
-        // Close the menu when a link is clicked
         navItems.forEach(item => {
           item.addEventListener('click', () => {
-            navLinks.classList.remove('show'); // Hide the menu
-            menuToggle.classList.remove('active'); // Change the icon back
+            navLinks.classList.remove('show'); 
+            menuToggle.classList.remove('active'); 
           });
         });
-      </script> 
-      
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
 
-    function toggleTab(id) {
-      const content = document.getElementById(id);
-      const isActive = content.classList.contains('active');
-      document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
-      if (!isActive) {
-        content.classList.add('active');
-      }
-    }
-  </script>
+        function toggleTab(id) {
+          const content = document.getElementById(id);
+          const isActive = content.classList.contains('active');
+          document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+          if (!isActive) content.classList.add('active');
+        }
+      </script>
 </body>
 
-  </html>
+</html>
