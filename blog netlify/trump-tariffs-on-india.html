@@ -39,6 +39,55 @@
 
     <!-- Quick Facts Table Styling -->
     <style>
+          .article-image-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.responsive-article-image {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.responsive-article-image:hover {
+  transform: scale(1.02);
+}
+
+.image-caption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 8px;
+  font-style: italic;
+}
+  @media (max-width: 480px) {
+  .image-caption {
+    font-size: 0.8rem;
+    padding: 0 10px;
+  }
+}
+.responsive-article-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+/* Smaller image on desktop (e.g., 500px wide max) */
+@media (min-width: 768px) {
+  .responsive-article-image {
+    max-width: 500px;
+  }
+}
+
+/* Slight zoom on hover */
+.responsive-article-image:hover {
+  transform: scale(1.02);
+}
       /* Responsive table container */
       .table-responsive {
         overflow-x: auto;
