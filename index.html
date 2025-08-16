@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SaaS Landing - JTG Assignment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#hero">SaaS</a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#features">Features</a>
+        <a href="#video">Video</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-primary" href="#pricing">Get Started</a>
+    </div>
+  </header>
+
+  <main id="hero" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>The best start with modern SaaS</h1>
+        <p>Next generation, all-in-one solution designed for teams. Save time, automate workflows, and grow faster.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#pricing">Start free</a>
+          <a class="btn btn-ghost" href="#video">See it in action</a>
+        </div>
+      </div>
+      <div class="hero-visual" role="img" aria-label="dashboard preview"></div>
+    </div>
+  </main>
+
+  <section id="features" class="section features">
+    <div class="container">
+      <header class="section-header">
+        <p class="eyebrow">Features</p>
+        <h2>Built for speed and simplicity</h2>
+      </header>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="icon" aria-hidden="true">⚡</div>
+          <h3>Lightning fast</h3>
+          <p>Optimized experiences ready out-of-the-box so you can move from idea to launch in days.</p>
+        </article>
+        <article class="feature-card">
+          <div class="icon" aria-hidden="true">🔒</div>
+          <h3>Secure by default</h3>
+          <p>Enterprise-grade security with best practices applied so you can focus on your business.</p>
+        </article>
+        <article class="feature-card">
+          <div class="icon" aria-hidden="true">🤖</div>
+          <h3>Automations</h3>
+          <p>Automate the repetitive work with simple rules and powerful integrations.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="video" class="section video-section">
+    <div class="container">
+      <header class="section-header">
+        <p class="eyebrow">Product video</p>
+        <h2>See how it works</h2>
+      </header>
+      <div class="video-wrapper">
+        <video id="productVideo" preload="metadata" poster="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1600&auto=format&fit=crop" tabindex="0">
+          <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <button id="videoOverlay" class="video-overlay" aria-label="Play or pause video">
+          <svg class="play-icon" viewBox="0 0 100 100" aria-hidden="true">
+            <circle cx="50" cy="50" r="48" fill="rgba(0,0,0,.55)" stroke="#fff" stroke-width="3" />
+            <polygon points="40,30 75,50 40,70" fill="#fff" />
+          </svg>
+          <svg class="pause-icon" viewBox="0 0 100 100" aria-hidden="true">
+            <circle cx="50" cy="50" r="48" fill="rgba(0,0,0,.55)" stroke="#fff" stroke-width="3" />
+            <rect x="35" y="30" width="10" height="40" fill="#fff" />
+            <rect x="55" y="30" width="10" height="40" fill="#fff" />
+          </svg>
+        </button>
+      </div>
+      <p class="video-help">Tip: Click the video to play/pause. The play icon is shown when paused.</p>
+    </div>
+  </section>
+
+  <section id="testimonials" class="section testimonials">
+    <div class="container">
+      <header class="section-header">
+        <p class="eyebrow">Testimonials</p>
+        <h2>Loved by modern teams</h2>
+      </header>
+
+      <div class="testimonial-slider" aria-roledescription="carousel">
+        <div class="slides" id="testimonialSlides">
+          <article class="slide">
+            <p class="quote">“Most calendars are designed for teams. SaaS is designed for freelancers who want a simple way to plan their schedule.”</p>
+            <div class="author">
+              <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=256&auto=format&fit=crop" alt="Portrait of customer" />
+              <div>
+                <strong>Alex Johnson</strong>
+                <span>Product Designer at IBM</span>
+              </div>
+            </div>
+          </article>
+          <article class="slide">
+            <p class="quote">“Setup took minutes. The automation rules alone save us several hours every single week.”</p>
+            <div class="author">
+              <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=256&auto=format&fit=crop" alt="Portrait of customer" />
+              <div>
+                <strong>Priya Patel</strong>
+                <span>Engineering Manager at Amazon</span>
+              </div>
+            </div>
+          </article>
+          <article class="slide">
+            <p class="quote">“Clean, elegant, and fast. Our team moved our entire workflow in less than a week.”</p>
+            <div class="author">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=256&auto=format&fit=crop" alt="Portrait of customer" />
+              <div>
+                <strong>Diego Alvarez</strong>
+                <span>Operations at Uber</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="dots" role="tablist" aria-label="Testimonial Navigation">
+          <button class="dot" aria-controls="slide-1" aria-label="Go to slide 1"></button>
+          <button class="dot" aria-controls="slide-2" aria-label="Go to slide 2"></button>
+          <button class="dot" aria-controls="slide-3" aria-label="Go to slide 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="section pricing">
+    <div class="container">
+      <header class="section-header light">
+        <p class="eyebrow">Pricing</p>
+        <h2>Simple pricing for every team</h2>
+      </header>
+      <div class="pricing-grid">
+        <article class="price-card">
+          <h3>Starter</h3>
+          <p class="price"><span>$</span>0<span class="period">/mo</span></p>
+          <ul>
+            <li>Up to 3 projects</li>
+            <li>Basic automations</li>
+            <li>Email support</li>
+          </ul>
+          <button class="btn btn-ghost">Get started</button>
+        </article>
+        <article class="price-card featured" aria-label="Recommended plan">
+          <h3>Pro</h3>
+          <p class="price"><span>$</span>10<span class="period">/mo</span></p>
+          <ul>
+            <li>Unlimited projects</li>
+            <li>Advanced automations</li>
+            <li>Priority support</li>
+          </ul>
+          <button class="btn btn-primary">Choose Pro</button>
+        </article>
+        <article class="price-card">
+          <h3>Business</h3>
+          <p class="price"><span>$</span>99<span class="period">/mo</span></p>
+          <ul>
+            <li>Everything in Pro</li>
+            <li>SSO and audit logs</li>
+            <li>Dedicated CSM</li>
+          </ul>
+          <button class="btn btn-ghost">Contact sales</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="container contact-grid">
+      <div class="contact-form">
+        <header class="section-header">
+          <p class="eyebrow">Contact Us</p>
+          <h2>We would love to hear from you</h2>
+        </header>
+        <form id="contactForm" novalidate>
+          <label>
+            <span>Name</span>
+            <input name="name" type="text" required placeholder="Your name" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input name="email" type="email" required placeholder="you@example.com" />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" required placeholder="How can we help?"></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+
+      <div class="contact-map" aria-label="Interactive map">
+        <iframe title="Google Map" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Times%20Square%2C%20New%20York&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">SaaS</div>
+      <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="copyright">© <span id="year"></span> SaaS Inc.</p>
+    </div>
+  </footer>
+
+  <div id="successModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card" role="document">
+      <button class="modal-close" aria-label="Close" data-close-modal>×</button>
+      <h3>Your query sent successfully</h3>
+      <p>Thanks for contacting us. We will get back to you soon.</p>
+      <button class="btn btn-primary" data-close-modal>Close</button>
+    </div>
+  </div>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
