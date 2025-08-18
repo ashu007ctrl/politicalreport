@@ -64,163 +64,128 @@
 </head>
 
   <style>
-    .tabs-container {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .tab-header {
-      background: #9d0dad;
-      color: white;
-      font-weight: 600;
-      padding: 15px 25px;
-      font-size: 20px;
-      cursor: pointer;
-      border-radius: 12px;
-      margin-bottom: 10px;
-      transition: background 0.3s ease;
-    }
-
-    .tab-header:hover {
-      background: #008264;
-    }
-
-    .tab-content {
-      display: none;
-      background: white;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      margin-bottom: 20px;
-    }
-
-    .tab-content.active {
-      display: block;
-      animation: fadeIn 0.5s ease-in-out;
-    }
-
-    .tab-content p {
-      font-size: 18px;
-      font-weight: bold;
-      margin: 10px 0;
-      transition: transform 0.2s, color 0.2s;
-      cursor: pointer;
-      color: #1a0dab;
-    }
-
-    .tab-content p:hover {
-      transform: translateX(5px);
-      text-decoration: underline;
-      color: #9d005e;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @media (max-width: 600px) {
-      .tab-header {
-        font-size: 18px;
-        padding: 12px 18px;
-      }
-      .tab-content {
-        font-size: 15px;
-      }
-      header {
-        margin-bottom: 20px;
-      }
-    }
-
-    .articles-heading {
-      font-family: 'Poppins', sans-serif;
-      padding: 20px 25px;
+    .articles-hero {
       background: #fff;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      padding: 24px 26px;
       margin-bottom: 20px;
-      animation: fadeIn 0.6s ease-in-out;
+      animation: fadeIn 0.5s ease-in-out;
     }
 
-    .articles-heading h1 {
+    .articles-hero h1 {
       font-size: 28px;
       color: #222;
-      margin-bottom: 10px;
+      margin: 0 0 8px 0;
       font-weight: 600;
     }
 
-    .articles-heading p {
-      font-size: 17px;
-      color: rgb(11, 5, 0);
-      line-height: 1.7;
+    .articles-hero p {
+      font-size: 16px;
+      color: #444;
       margin: 0;
     }
 
-    @media (max-width: 600px) {
-      .articles-heading {
-        padding: 15px 18px;
-      }
-
-      .articles-heading h1 {
-        font-size: 22px;
-      }
-
-      .articles-heading p {
-        font-size: 15px;
-      }
+    .articles-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin: 14px 0 6px 0;
     }
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(15px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    .filter-btn {
+      border: 1px solid #e6e6e6;
+      background: #f8f8f8;
+      color: #333;
+      padding: 8px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.2s ease-in-out;
     }
 
-    .article-links a {
+    .filter-btn:hover {
+      background: #eef6ff;
+      border-color: #cfe3ff;
+      color: #007bff;
+    }
+
+    .filter-btn.active {
+      background: #007bff;
+      color: #fff;
+      border-color: #007bff;
+    }
+
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 10px;
+    }
+
+    .article-card {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 12px;
+      padding: 16px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-height: 120px;
+    }
+
+    .article-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+      border-color: #e3e3e3;
+    }
+
+    .article-card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .article-card h3 {
+      font-size: 17px;
+      margin: 6px 0 0 0;
+      color: #111;
+      line-height: 1.45;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      color: #007bff;
+      background: #eef6ff;
+      border: 1px solid #d8e9ff;
+      padding: 4px 8px;
+      border-radius: 999px;
+    }
+
+    .card-footer {
+      margin-top: auto;
       display: flex;
       align-items: center;
-      font-family: 'Poppins', sans-serif;
-      font-size: 17px;
-      font-weight: 600;
-      text-decoration: none;
-      color: #111;
-      background: #f5f5f5;
-      padding: 12px 16px;
-      margin-bottom: 12px;
-      border-radius: 10px;
-      transition: all 0.3s ease;
-      position: relative;
-      counter-increment: article-counter;
+      justify-content: space-between;
+      color: #666;
+      font-size: 13px;
     }
 
-    .article-links a::before {
-      content: counter(article-counter) ".";
-      font-weight: bold;
-      margin-right: 10px;
-      color: #000;
+    .card-footer .go {
+      color: #007bff;
+      font-weight: 700;
     }
 
-    .article-links a:hover {
-      background-color: #e9ecef;
-      color: #007BFF;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    @media (max-width: 600px) {
+      .articles-hero h1 { font-size: 22px; }
+      .articles-hero p { font-size: 15px; }
     }
 
-    .article-links {
-      counter-reset: article-counter;
-    }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0);} }
   </style>
 </head>
 
@@ -248,56 +213,152 @@
 
       <div class="main-content">
         <section>
-          <div class="articles-heading">
-            <h1>Articles & Insights</h1>
-            <p>
-              Welcome to the Articles section of Political Report. Here you'll find well-researched, unbiased articles exploring key political themes, government actions, policy debates, and leadership analysis.
-            </p>
+          <div class="articles-hero">
+            <h1>Articles</h1>
+            <p>Explore fresh perspectives, data-backed analysis, and timely updates across news, politics, and international affairs.</p>
+            <div class="articles-toolbar">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="news">News</button>
+              <button class="filter-btn" data-filter="articles">Articles</button>
+              <button class="filter-btn" data-filter="politics">Politics</button>
+              <button class="filter-btn" data-filter="international">International</button>
+            </div>
           </div>
 
-          <div class="tabs-container">
-            <div class="tab-header" onclick="toggleTab('news')">📰 News</div>
-            <div class="tab-content" id="news">
-              <div class="article-links">
-                <a href="kendra-scott-engagement-2025.html" target="_blank">Kendra Scott Gets Engaged</a>
-                <a href="trump2v1.html" target="_blank">Trump 2.0 Vs 1.0</a>
-              </div>
-            </div>
+          <div class="articles-grid" id="articles-grid">
+            <!-- News -->
+            <article class="article-card" data-category="news">
+              <a href="kendra-scott-engagement-2025.html" target="_blank" rel="noopener">
+                <span class="badge">News</span>
+                <h3>Kendra Scott Gets Engaged</h3>
+                <div class="card-footer"><span>Update</span><span class="go">Read →</span></div>
+              </a>
+            </article>
+            <article class="article-card" data-category="news">
+              <a href="trump2v1.html" target="_blank" rel="noopener">
+                <span class="badge">News</span>
+                <h3>Trump 2.0 Vs 1.0</h3>
+                <div class="card-footer"><span>Analysis</span><span class="go">Read →</span></div>
+              </a>
+            </article>
 
-            <div class="tab-header" onclick="toggleTab('articles')">📑 Articles</div>
-            <div class="tab-content" id="articles">
-              <div class="article-links">
-                <a href="why-bjp-rules-india.html" target="_blank">Why BJP Rules India?</a>
-                <a href="pahalgam-attack.html" target="_blank">Pahalgam Terror Attack</a>
-                <a href="operation-sindoor.html" target="_blank">Operation Sindoor</a>
-                <a href="indus-water-treaty.html" target="_blank">Indus Water Treaty</a>
-                <a href="india-pakistan-military-comparison.html" target="_blank">India Vs Pakistan : Military Comparison</a>
-                <a href="history-of-bjp.html" target="_blank">History Of BJP</a>
-                <a href="bjp-welfare-scheme.html" target="_blank">BJP Welfare Schemes</a>
-              </div>
-            </div>
+            <!-- Articles -->
+            <article class="article-card" data-category="articles">
+              <a href="why-bjp-rules-india.html" target="_blank" rel="noopener">
+                <span class="badge">Article</span>
+                <h3>Why BJP Rules India?</h3>
+                <div class="card-footer"><span>Explainer</span><span class="go">Read →</span></div>
+              </a>
+            </article>
+            <article class="article-card" data-category="articles">
+              <a href="pahalgam-attack.html" target="_blank" rel="noopener">
+                <span class="badge">Article</span>
+                <h3>Pahalgam Terror Attack</h3>
+                <div class="card-footer"><span>Briefing</span><span class="go">Read →</span></div>
+              </a>
+            </article>
+            <article class="article-card" data-category="articles">
+              <a href="operation-sindoor.html" target="_blank" rel="noopener">
+                <span class="badge">Article</span>
+                <h3>Operation Sindoor</h3>
+                <div class="card-footer"><span>Deep Dive</span><span class="go">Read →</span></div>
+              </a>
+            </article>
+            <article class="article-card" data-category="articles">
+              <a href="indus-water-treaty.html" target="_blank" rel="noopener">
+                <span class="badge">Article</span>
+                <h3>Indus Water Treaty</h3>
+                <div class="card-footer"><span>Treaty</span><span class="go">Read →</span></div>
+              </a>
+            </article>
+            <article class="article-card" data-category="articles">
+              <a href="india-pakistan-military-comparison.html" target="_blank" rel="noopener">
+                <span class="badge">Article</span>
+                <h3>India Vs Pakistan: Military Comparison</h3>
+                <div class="card-footer"><span>Comparison</span><span class="go">Read →</span></div>
+              </a>
+            </article>
+            <article class="article-card" data-category="articles">
+              <a href="history-of-bjp.html" target="_blank" rel="noopener">
+                <span class="badge">Article</span>
+                <h3>History Of BJP</h3>
+                <div class="card-footer"><span>History</span><span class="go">Read →</span></div>
+              </a>
+            </article>
+            <article class="article-card" data-category="articles">
+              <a href="bjp-welfare-scheme.html" target="_blank" rel="noopener">
+                <span class="badge">Article</span>
+                <h3>BJP Welfare Schemes</h3>
+                <div class="card-footer"><span>Policy</span><span class="go">Read →</span></div>
+              </a>
+            </article>
 
-            <div class="tab-header" onclick="toggleTab('election')">🗳️  Politics</div>
-            <div class="tab-content" id="election">
-              <div class="article-links">
-                <a href="why-bjp-lost-ayodhya.html" target="_blank">Why BJP lost Ayodhya 2024</a>
-                <a href="yogi-vs-akhilesh.html" target="_blank">Yogi Adityanath Vs Akhilesh Yadav</a>
-                <a href="modi-vs-rahul.html" target="_blank">Narendra Modi Vs Rahul Gandhi ! Future PM</a>
-                
-               <a href="caste-census.html" target="_blank">Caste Census in India</a>
-            </div>
-            </div>
+            <!-- Politics -->
+            <article class="article-card" data-category="politics">
+              <a href="why-bjp-lost-ayodhya.html" target="_blank" rel="noopener">
+                <span class="badge">Politics</span>
+                <h3>Why BJP lost Ayodhya 2024</h3>
+                <div class="card-footer"><span>Election</span><span class="go">Read →</span></div>
+              </a>
+            </article>
+            <article class="article-card" data-category="politics">
+              <a href="yogi-vs-akhilesh.html" target="_blank" rel="noopener">
+                <span class="badge">Politics</span>
+                <h3>Yogi Adityanath Vs Akhilesh Yadav</h3>
+                <div class="card-footer"><span>Debate</span><span class="go">Read →</span></div>
+              </a>
+            </article>
+            <article class="article-card" data-category="politics">
+              <a href="modi-vs-rahul.html" target="_blank" rel="noopener">
+                <span class="badge">Politics</span>
+                <h3>Narendra Modi Vs Rahul Gandhi – Future PM</h3>
+                <div class="card-footer"><span>Opinion</span><span class="go">Read →</span></div>
+              </a>
+            </article>
+            <article class="article-card" data-category="politics">
+              <a href="caste-census.html" target="_blank" rel="noopener">
+                <span class="badge">Politics</span>
+                <h3>Caste Census in India</h3>
+                <div class="card-footer"><span>Policy</span><span class="go">Read →</span></div>
+              </a>
+            </article>
 
-            <div class="tab-header" onclick="toggleTab('international')">🌍 International</div>
-            <div class="tab-content" id="international">
-              <div class="article-links">
-                   <a href="trump-tariffs-on-india.html" target="_blank">Trump Tariffs on India</a>
-                <a href="when-dubai-almost-became-part-of-india.html" target="_blank">When Dubai almost became part of India</a>
-                <a href="thailand-vs-cambodia.html" target="_blank">Thailand Vs Cambodia</a>
-                <a href="iran-vs-israel.html" target="_blank">Iran Vs Israel 2025</a>
-                <a href="india-tour-of-england-2025.html" target="_blank">India Tour Of England 2025 Test Series</a>
-              </div>
-            </div>
+            <!-- International -->
+            <article class="article-card" data-category="international">
+              <a href="trump-tariffs-on-india.html" target="_blank" rel="noopener">
+                <span class="badge">International</span>
+                <h3>Trump Tariffs on India</h3>
+                <div class="card-footer"><span>Trade</span><span class="go">Read →</span></div>
+              </a>
+            </article>
+            <article class="article-card" data-category="international">
+              <a href="when-dubai-almost-became-part-of-india.html" target="_blank" rel="noopener">
+                <span class="badge">International</span>
+                <h3>When Dubai Almost Became Part of India</h3>
+                <div class="card-footer"><span>History</span><span class="go">Read →</span></div>
+              </a>
+            </article>
+            <article class="article-card" data-category="international">
+              <a href="thailand-vs-cambodia.html" target="_blank" rel="noopener">
+                <span class="badge">International</span>
+                <h3>Thailand Vs Cambodia</h3>
+                <div class="card-footer"><span>Travel</span><span class="go">Read →</span></div>
+              </a>
+            </article>
+            <article class="article-card" data-category="international">
+              <a href="iran-vs-israel.html" target="_blank" rel="noopener">
+                <span class="badge">International</span>
+                <h3>Iran Vs Israel 2025</h3>
+                <div class="card-footer"><span>Conflict</span><span class="go">Read →</span></div>
+              </a>
+            </article>
+            <article class="article-card" data-category="international">
+              <a href="india-tour-of-england-2025.html" target="_blank" rel="noopener">
+                <span class="badge">International</span>
+                <h3>India Tour Of England 2025 Test Series</h3>
+                <div class="card-footer"><span>Cricket</span><span class="go">Read →</span></div>
+              </a>
+            </article>
           </div>
         </section>
       </div>
@@ -311,25 +372,33 @@
       <script>
         const menuToggle = document.getElementById('menu-toggle');
         const navLinks = document.getElementById('nav-links');
-        const navItems = document.querySelectorAll('.nav-links li a'); 
-        
+        const navItems = document.querySelectorAll('.nav-links li a');
         menuToggle.addEventListener('click', () => {
           navLinks.classList.toggle('show');
           menuToggle.classList.toggle('active');
         });
         navItems.forEach(item => {
           item.addEventListener('click', () => {
-            navLinks.classList.remove('show'); 
-            menuToggle.classList.remove('active'); 
+            navLinks.classList.remove('show');
+            menuToggle.classList.remove('active');
           });
         });
 
-        function toggleTab(id) {
-          const content = document.getElementById(id);
-          const isActive = content.classList.contains('active');
-          document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
-          if (!isActive) content.classList.add('active');
-        }
+        // Category filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('.article-card');
+        filterButtons.forEach(btn => {
+          btn.addEventListener('click', () => {
+            filterButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const filter = btn.getAttribute('data-filter');
+            cards.forEach(card => {
+              const category = card.getAttribute('data-category');
+              const show = filter === 'all' || category === filter;
+              card.style.display = show ? 'flex' : 'none';
+            });
+          });
+        });
       </script>
 </body>
 
